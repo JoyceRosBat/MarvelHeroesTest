@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hero Details View Controller-->
+        <scene sceneID="aJs-3l-zp4">
+            <objects>
+                <viewController restorationIdentifier="HeroDetailsViewController" storyboardIdentifier="HeroDetailsViewController" id="XiA-LF-0tL" customClass="HeroDetailsViewController" customModule="Marvel_Heroes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="J8C-hx-s8Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmz-pn-tMk">
+                                <rect key="frame" x="10" y="54" width="394" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kiJ-Xs-zYb">
+                                        <rect key="frame" x="0.0" y="10" width="394" height="0.0"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xY-2l-bZu">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
+                                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="30"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srZ-Q5-vQh">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="csw-vd-TtS">
+                                                <rect key="frame" x="0.0" y="0.0" width="394" height="0.0"/>
+                                            </imageView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="1xY-2l-bZu" firstAttribute="leading" secondItem="kiJ-Xs-zYb" secondAttribute="leading" id="6Re-JQ-YuU"/>
+                                            <constraint firstAttribute="trailing" secondItem="1xY-2l-bZu" secondAttribute="trailing" id="8ak-7z-RXk"/>
+                                            <constraint firstItem="csw-vd-TtS" firstAttribute="leading" secondItem="kiJ-Xs-zYb" secondAttribute="leading" id="PCo-wU-nXr"/>
+                                            <constraint firstAttribute="trailing" secondItem="csw-vd-TtS" secondAttribute="trailing" id="dqG-5Q-kXJ"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="kiJ-Xs-zYb" firstAttribute="width" secondItem="Gmz-pn-tMk" secondAttribute="width" id="MbA-5a-Vzd"/>
+                                    <constraint firstItem="kiJ-Xs-zYb" firstAttribute="top" secondItem="Gmz-pn-tMk" secondAttribute="top" constant="10" id="Qao-bG-RT7"/>
+                                    <constraint firstItem="kiJ-Xs-zYb" firstAttribute="leading" secondItem="Gmz-pn-tMk" secondAttribute="leading" id="Swt-bU-25G"/>
+                                    <constraint firstAttribute="trailing" secondItem="kiJ-Xs-zYb" secondAttribute="trailing" id="jcJ-iz-FLN"/>
+                                    <constraint firstAttribute="bottom" secondItem="kiJ-Xs-zYb" secondAttribute="bottom" constant="10" id="xXv-f7-cc8"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="vXT-0P-3Tr"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="aR1-h5-QMN"/>
+                            </scrollView>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="An error occurred and there is no content to display..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4jW-IM-hcX">
+                                <rect key="frame" x="20" y="425" width="374" height="56"/>
+                                <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Gmz-pn-tMk" firstAttribute="centerX" secondItem="eX6-bf-viH" secondAttribute="centerX" id="17N-hD-5Or"/>
+                            <constraint firstItem="4jW-IM-hcX" firstAttribute="centerY" secondItem="eX6-bf-viH" secondAttribute="centerY" id="4ve-mi-WSt"/>
+                            <constraint firstItem="eX6-bf-viH" firstAttribute="bottom" secondItem="Gmz-pn-tMk" secondAttribute="bottom" constant="10" id="6pO-t0-EpA"/>
+                            <constraint firstItem="Gmz-pn-tMk" firstAttribute="leading" secondItem="eX6-bf-viH" secondAttribute="leading" constant="10" id="Bvz-ZX-mOj"/>
+                            <constraint firstItem="eX6-bf-viH" firstAttribute="trailing" secondItem="4jW-IM-hcX" secondAttribute="trailing" constant="20" id="M6s-un-Ydo"/>
+                            <constraint firstItem="Gmz-pn-tMk" firstAttribute="top" secondItem="eX6-bf-viH" secondAttribute="top" constant="10" id="QlM-5y-1fD"/>
+                            <constraint firstItem="4jW-IM-hcX" firstAttribute="centerX" secondItem="eX6-bf-viH" secondAttribute="centerX" id="R7b-md-FQX"/>
+                            <constraint firstItem="4jW-IM-hcX" firstAttribute="leading" secondItem="eX6-bf-viH" secondAttribute="leading" constant="20" id="XEe-uS-Vxk"/>
+                            <constraint firstItem="eX6-bf-viH" firstAttribute="trailing" secondItem="Gmz-pn-tMk" secondAttribute="trailing" constant="10" id="kLI-l4-jTY"/>
+                            <constraint firstItem="Gmz-pn-tMk" firstAttribute="centerY" secondItem="eX6-bf-viH" secondAttribute="centerY" id="wej-A7-wCs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eX6-bf-viH"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentStackView" destination="kiJ-Xs-zYb" id="kP1-Bo-vav"/>
+                        <outlet property="descriptionLabel" destination="srZ-Q5-vQh" id="WcK-8N-BLB"/>
+                        <outlet property="errorLabel" destination="4jW-IM-hcX" id="kd7-1e-ccf"/>
+                        <outlet property="heroImageView" destination="csw-vd-TtS" id="lvL-Yg-gDg"/>
+                        <outlet property="nameLabel" destination="1xY-2l-bZu" id="nD9-W9-YCP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAf-DM-VqF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="128.98550724637681" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
