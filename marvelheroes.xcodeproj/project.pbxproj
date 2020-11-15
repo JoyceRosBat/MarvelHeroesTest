@@ -19,7 +19,6 @@
 		E9A2267F255FC185000547ED /* MRV-info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E9A2267E255FC185000547ED /* MRV-info.plist */; };
 		E9A2268C255FFE1C000547ED /* ErrorMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2268B255FFE1C000547ED /* ErrorMessage.swift */; };
 		E9A2268E255FFE5C000547ED /* HeroDefaultServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A2268D255FFE5C000547ED /* HeroDefaultServiceProtocol.swift */; };
-		E9A22691255FFE99000547ED /* HeroDefaultService+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A22690255FFE99000547ED /* HeroDefaultService+Ext.swift */; };
 		E9A22693256000E5000547ED /* HeroDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A22692256000E5000547ED /* HeroDefaultService.swift */; };
 		E9A22695256002F0000547ED /* HeroNetworkServiveAPI+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A22694256002F0000547ED /* HeroNetworkServiveAPI+Ext.swift */; };
 		E9A226972560031A000547ED /* MRVKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9A226962560031A000547ED /* MRVKeys.swift */; };
@@ -45,6 +44,8 @@
 		E9D0AD9525609A5E00E791F5 /* HeroesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0AD9425609A5E00E791F5 /* HeroesCollectionViewFlowLayout.swift */; };
 		E9D0AD972560B24F00E791F5 /* Hero+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0AD962560B24F00E791F5 /* Hero+Ext.swift */; };
 		E9D0AD992560B28200E791F5 /* EntityConvertableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0AD982560B28200E791F5 /* EntityConvertableProtocol.swift */; };
+		E9D0AD9F2561856C00E791F5 /* HeroService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0AD9E2561856C00E791F5 /* HeroService.swift */; };
+		E9D0ADA1256185D000E791F5 /* HeroServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D0ADA0256185D000E791F5 /* HeroServiceProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,7 +65,6 @@
 		E9A2267E255FC185000547ED /* MRV-info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MRV-info.plist"; sourceTree = "<group>"; };
 		E9A2268B255FFE1C000547ED /* ErrorMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMessage.swift; sourceTree = "<group>"; };
 		E9A2268D255FFE5C000547ED /* HeroDefaultServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDefaultServiceProtocol.swift; sourceTree = "<group>"; };
-		E9A22690255FFE99000547ED /* HeroDefaultService+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroDefaultService+Ext.swift"; sourceTree = "<group>"; };
 		E9A22692256000E5000547ED /* HeroDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDefaultService.swift; sourceTree = "<group>"; };
 		E9A22694256002F0000547ED /* HeroNetworkServiveAPI+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HeroNetworkServiveAPI+Ext.swift"; sourceTree = "<group>"; };
 		E9A226962560031A000547ED /* MRVKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRVKeys.swift; sourceTree = "<group>"; };
@@ -90,6 +90,8 @@
 		E9D0AD9425609A5E00E791F5 /* HeroesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		E9D0AD962560B24F00E791F5 /* Hero+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hero+Ext.swift"; sourceTree = "<group>"; };
 		E9D0AD982560B28200E791F5 /* EntityConvertableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityConvertableProtocol.swift; sourceTree = "<group>"; };
+		E9D0AD9E2561856C00E791F5 /* HeroService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroService.swift; sourceTree = "<group>"; };
+		E9D0ADA0256185D000E791F5 /* HeroServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroServiceProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +208,7 @@
 			children = (
 				E9A2268D255FFE5C000547ED /* HeroDefaultServiceProtocol.swift */,
 				E9A2269825600385000547ED /* HeroNetworkAPIKeysProtocol.swift */,
+				E9D0ADA0256185D000E791F5 /* HeroServiceProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				E9A22692256000E5000547ED /* HeroDefaultService.swift */,
+				E9D0AD9E2561856C00E791F5 /* HeroService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -241,7 +245,6 @@
 		E9A2268F255FFE88000547ED /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				E9A22690255FFE99000547ED /* HeroDefaultService+Ext.swift */,
 				E9A22694256002F0000547ED /* HeroNetworkServiveAPI+Ext.swift */,
 			);
 			path = Extensions;
@@ -525,10 +528,10 @@
 				E9D0AD9525609A5E00E791F5 /* HeroesCollectionViewFlowLayout.swift in Sources */,
 				E9D0AD702560628B00E791F5 /* RootRouterProtocol.swift in Sources */,
 				E9A2271225604491000547ED /* HeroPresenter.swift in Sources */,
-				E9A22691255FFE99000547ED /* HeroDefaultService+Ext.swift in Sources */,
 				E9A2270C25604463000547ED /* HeroInteractor.swift in Sources */,
 				E9D0AD842560703400E791F5 /* HeroDetailsPresenter.swift in Sources */,
 				E9D0AD722560631D00E791F5 /* RootRouter.swift in Sources */,
+				E9D0AD9F2561856C00E791F5 /* HeroService.swift in Sources */,
 				E9A226972560031A000547ED /* MRVKeys.swift in Sources */,
 				E9A2267B255FBD48000547ED /* NetworkError.swift in Sources */,
 				E9A22714256044A0000547ED /* HeroProtocols.swift in Sources */,
@@ -540,6 +543,7 @@
 				E93E1F20255F3CB600F909B1 /* AppDelegate.swift in Sources */,
 				E9A2267D255FBEEF000547ED /* Endpoints.swift in Sources */,
 				E9A2269925600385000547ED /* HeroNetworkAPIKeysProtocol.swift in Sources */,
+				E9D0ADA1256185D000E791F5 /* HeroServiceProtocol.swift in Sources */,
 				E9D0AD7925606D5400E791F5 /* HeroesCollectionViewCell.swift in Sources */,
 				E9D0AD8A2560707A00E791F5 /* HeroDetailsViewController.swift in Sources */,
 				E9D0AD972560B24F00E791F5 /* Hero+Ext.swift in Sources */,

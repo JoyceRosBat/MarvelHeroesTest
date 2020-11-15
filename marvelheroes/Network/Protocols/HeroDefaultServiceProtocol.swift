@@ -9,6 +9,7 @@
 import Foundation
 
 protocol HeroDefaultServiceProtocol {
-    func getHeroesList(completion: @escaping (Result<[Hero]>) -> Void)
-    func getHeroDetails(characterId: Int, completion: @escaping (Result<Hero?>) -> Void)
+    func sendRequest<T: Codable>(_ request: HeroNetworkServiveAPI, completion: @escaping (Result<T>) -> Void)
+    func requestGetHeroesList(completion: @escaping (Result<HeroData>) -> Void)
+    func requestGetHeroDetails(characterId: Int, completion: @escaping (Result<HeroData>) -> Void)
 }

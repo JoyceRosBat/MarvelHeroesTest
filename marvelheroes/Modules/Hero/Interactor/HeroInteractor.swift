@@ -12,7 +12,7 @@ class HeroInteractor: HeroUseCase {
     var output: HeroInteractorOutput!
     
     func fetchHeroes() {
-        HeroDefaultService().getHeroesList(completion: { result in
+        HeroService().getHeroesList(completion: { result in
             switch result {
             case .success(let heroesList):
                 self.output.heroesFetched(heroesList)
