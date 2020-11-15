@@ -68,7 +68,6 @@ extension HeroDetailsViewController: HeroDetailsViewProtocol {
         if let events = hero.events?.item, events.count > 0 {
             appendItemsInfo(withTitle: "Events", items: events)
         }
-        
     }
     
 }
@@ -87,15 +86,13 @@ extension HeroDetailsViewController {
     func createAndAddItem(withString string: String, isHeader: Bool = false) {
         let label = UILabel()
         label.numberOfLines = 0
-        label.text = "・ " + string
         
         if isHeader {
             label.font = label.font.withSize(30)
+            label.text = string
         } else {
-            label.text = "・ "
+            label.text = "・ " + string
         }
-        
-        label.text?.append(string)
         
         contentStackView.addArrangedSubview(label)
     }
